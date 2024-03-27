@@ -5,11 +5,9 @@ import {AsyncPipe, JsonPipe} from '@angular/common';
   selector: 'app-root',
   standalone: true,
   imports: [AsyncPipe, JsonPipe],
-  template: `
-    <h1>Hello from {{ name }}!</h1>
-  `,
+  templateUrl: './app.component.html',
+  styleUrls: ['../styles.scss', './app.component.scss']
 })
 export class AppComponent {
-  name = 'Angular';
-
+  
 }
